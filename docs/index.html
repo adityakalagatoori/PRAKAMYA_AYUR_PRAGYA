@@ -1,201 +1,233 @@
 <!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<html lang="en"><head><meta charset="utf-8">
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-<title>AYUR PRAGYA | PRAKAMYA</title>
-<meta name="description" content="AYUR PRAGYA: explainable, Vaidya-validated Samprapti support. AyushTech Innovate Phase 1 submission from team PRAKAMYA.">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>AYUR PRAGYA: Round 1 Abstract</title>
 <style>
-  :root {
-    --bg: #F7F4FD; --card: #FFFFFF; --fg: #21163A; --muted: #6B5B8C;
-    --accent: #5B21B6; --accent-2: #8B5CF6; --line: #E4DDF5; --ok: #15803D;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root:not([data-theme="light"]) {
-      --bg: #140E24; --card: #1E1733; --fg: #F1ECFF; --muted: #B7A9D6;
-      --accent: #C4B5FD; --accent-2: #A78BFA; --line: #342A52; --ok: #4ADE80; color-scheme: dark;
-    }
-  }
-  :root[data-theme="dark"] {
-    --bg: #140E24; --card: #1E1733; --fg: #F1ECFF; --muted: #B7A9D6;
-    --accent: #C4B5FD; --accent-2: #A78BFA; --line: #342A52; --ok: #4ADE80; color-scheme: dark;
-  }
-  * { box-sizing: border-box; }
-  body {
-    margin: 0; background: var(--bg); color: var(--fg);
-    font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
-    padding-left: max(16px, env(safe-area-inset-left, 0px));
-    padding-right: max(16px, env(safe-area-inset-right, 0px));
-  }
-  main { max-width: 960px; margin: 0 auto; padding-block: 28px 56px; }
-  h1, h2, h3 { line-height: 1.25; text-wrap: balance; }
-  h1 { font-size: clamp(1.7rem, 4.5vw, 2.4rem); margin: 0 0 8px; color: var(--accent); }
-  h2 { font-size: 1.35rem; margin: 40px 0 12px; color: var(--accent); }
-  h3 { font-size: 1.05rem; margin: 0 0 6px; }
-  p { margin: 0 0 12px; }
-  .lede { color: var(--muted); font-size: 1.02rem; max-width: 62ch; }
-  .band {
-    background: linear-gradient(120deg, #4C1D95, #8B5CF6); color: #fff;
-    border-radius: 16px; padding: 22px 20px; margin-bottom: 8px;
-  }
-  .band p { color: #EDE9FE; margin: 0; }
-  .grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
-  .card {
-    background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 16px;
-    min-width: 0;
-  }
-  .tag { display: inline-block; font-size: .75rem; letter-spacing: .04em; text-transform: uppercase;
-    color: var(--accent); border: 1px solid var(--line); border-radius: 999px; padding: 2px 9px; margin-bottom: 8px; }
-  a { color: var(--accent); }
-  .btn {
-    appearance: none; border: 1px solid var(--accent); background: transparent; color: var(--accent);
-    border-radius: 10px; padding: 8px 14px; font: inherit; cursor: pointer; min-height: 40px;
-  }
-  .btn:hover { background: var(--accent); color: #fff; }
-  .btn[disabled] { opacity: .55; cursor: default; }
-  .btn[disabled]:hover { background: transparent; color: var(--accent); }
-  .player { margin-top: 10px; }
-  .player .bar { height: 6px; background: var(--line); border-radius: 999px; overflow: hidden; margin: 8px 0; }
-  .player .bar > span { display: block; height: 100%; width: 0; background: var(--accent-2); }
-  .row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
-  .note { color: var(--muted); font-size: .9rem; }
-  figure { margin: 0 0 28px; }
-  figure img { width: 100%; height: auto; border-radius: 12px; border: 1px solid var(--line); background: #fff; }
-  figcaption { color: var(--muted); font-size: .92rem; margin-top: 8px; }
-  .pdf-links { display: flex; flex-wrap: wrap; gap: 10px; }
-  .pdf-links a { text-decoration: none; border: 1px solid var(--accent); border-radius: 10px; padding: 10px 14px; }
-  footer { margin-top: 48px; color: var(--muted); font-size: .88rem; }
-</style>
-</head>
+:root { --ink:#21163A; --violet:#4C1D95; --lav:#8B5CF6; color-scheme: light; }
+* { box-sizing: border-box; }
+body { margin:0; color:var(--ink); font: 14px/1.5 Arial, Helvetica, sans-serif;
+  background: linear-gradient(180deg,#E6DBFF 0%,#FFFFFF 100%);
+  padding: 20px max(16px, env(safe-area-inset-right, 0px)) 40px max(16px, env(safe-area-inset-left, 0px)); }
+.page { position:relative; max-width:720px; margin:0 auto 28px; min-height: 980px;
+  background: linear-gradient(180deg,#E6DBFF 0%,#FFFFFF 100%);
+  border:1px solid var(--lav); border-radius:14px; padding: 64px 26px 56px; overflow:hidden; }
+.page::before { content:""; position:absolute; inset:0; pointer-events:none;
+  background: radial-gradient(circle at 88% 6%, rgba(139,92,246,.20), transparent 40%),
+              radial-gradient(circle at 6% 94%, rgba(217,70,239,.12), transparent 38%); }
+.topbar { position:absolute; top:14px; right:18px; left:18px; display:flex; justify-content:flex-end; align-items:center; z-index:2; }
+.listen { display:flex; align-items:center; gap:8px; border:0; background:none; cursor:pointer; padding:0; font: inherit; }
+.arr { width:54px; height:12px; fill:none; stroke:var(--violet); stroke-width:1.6; flex:none; }
+.tap { font-size:11px; font-weight:bold; color:var(--violet); white-space:nowrap; }
+.pill { display:inline-flex; align-items:center; gap:8px; white-space:nowrap; border-radius:999px; padding:8px 14px;
+  font: bold 12px Arial, sans-serif; color:#3B1A7A;
+  background: rgba(255,255,255,.72); border:1.5px solid rgba(139,92,246,.8);
+  box-shadow: 0 6px 18px rgba(139,92,246,.22), inset 0 1px 0 rgba(255,255,255,.9);
+  backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); }
+.play { color:var(--violet); font-size:11px; }
+.listen.playing .pill { background: var(--violet); color:#fff; }
+.listen.playing .play { color:#fff; }
+.content { position:relative; z-index:1; }
+h1 { color:var(--violet); font-size:20px; line-height:1.25; text-align:center; margin:6px 0 8px; text-wrap:balance; }
+h2 { color:var(--violet); font-size:14px; margin:0 0 6px; }
+h3 { color:var(--violet); font-size:13px; margin:0 0 8px; text-align:center; }
+p { margin:0 0 6px; }
+.team { text-align:center; color:#4A3B6B; font-size:12px; }
+.item { padding-left:14px; text-indent:-14px; }
+.glass { background: rgba(255,255,255,.72); border:1.5px solid rgba(139,92,246,.7); border-radius:12px;
+  box-shadow: 0 6px 20px rgba(76,29,149,.10), inset 0 1px 0 rgba(255,255,255,.9);
+  padding:10px 14px; margin:8px 0; }
+.highlight p { margin:0; font-size:13px; }
+.fig { text-align:center; padding:12px 14px; margin:10px 0; }
+.fig img { width:100%; height:auto; display:block; border-radius:8px; }
+.cap { font-size:11px; color:#5C5470; margin:4px 0 0; }
+.refs .ref { font-size:10px; line-height:1.35; padding-left:14px; text-indent:-14px; color:var(--ink); }
+.foot { position:absolute; left:26px; right:26px; bottom:18px; display:flex; justify-content:space-between; font-size:9px; color:#6B5B8C; z-index:1; }
+@media (max-width: 600px) { .page { min-height:auto; padding:72px 16px 56px; } .topbar { top:10px; left:10px; right:10px; } .tap { display:none; } }
+
+.topbar { flex-wrap:wrap; justify-content:flex-end; }
+.ctl { width:100%; display:flex; justify-content:flex-end; }
+.player { display:flex; align-items:center; gap:8px; margin-top:8px; font-size:11px; color:var(--violet); width:min(360px,100%); background:rgba(255,255,255,.9); border:1px solid rgba(139,92,246,.6); border-radius:12px; padding:6px 10px; box-shadow:0 6px 18px rgba(139,92,246,.2); }
+.player[hidden] { display:none; }
+.player .t { min-width:34px; font-variant-numeric: tabular-nums; }
+.player .left { text-align:right; }
+.player .bar { flex:1; height:8px; border-radius:8px; background: rgba(139,92,246,.18); cursor:pointer; position:relative; }
+.player .fill { height:100%; width:0%; border-radius:8px; background: linear-gradient(90deg,#8B5CF6,#D946EF); }
+.player .speeds { display:flex; gap:4px; }
+.player .speeds button { border:1px solid rgba(139,92,246,.7); background:rgba(255,255,255,.8); color:var(--violet);
+  border-radius:999px; padding:3px 8px; font: bold 11px Arial, sans-serif; cursor:pointer; }
+.player .speeds button.on { background:var(--violet); color:#fff; }
+
+.fig-title { text-align:center; color:var(--violet); font-size:16px; margin:6px 0 4px; }
+.note { font-size:11px; color:#5C5470; text-align:center; margin:0 0 8px; }
+.voice { margin-top:8px; }
+.ref { font-size:11px; line-height:1.4; padding-left:14px; text-indent:-14px; }
+.page { min-height: 0; }
+.content { padding-top: 40px; }
+</style></head>
 <body>
-<main>
-
-  <header>
-    <p class="tag">AyushTech Innovate | Techfest 2026-27 | Phase 1</p>
-    <h1>AYUR PRAGYA</h1>
-    <p class="lede">Explainable Samprapti support for Ayurvedic practitioners. Every inference traces to a patient observation and a verified classical source. The AI proposes; the Vaidya decides.</p>
-    <p class="note">Team PRAKAMYA</p>
-  </header>
-
-  <section>
-    <h2>Documents</h2>
-    <div class="pdf-links">
-      <a href="PRAKAMYA_AYUR_PRAGYA_Round1_Abstract.pdf">Phase 1 abstract (PDF)</a>
-      <a href="AYUR_PRAGYA_Final_Proposal.pdf">Full proposal (PDF)</a>
-    </div>
-  </section>
-
-  <section>
-    <h2>Team explanations</h2>
-    <p class="note">Each member explains their part. Press play to listen.</p>
-    <div class="grid" id="team"></div>
-  </section>
-
-  <section>
-    <h2>Prototype screens (design mock-ups)</h2>
-    <p class="note">Design mock-ups of the planned prototype. Patients are synthetic and scores are illustrative. They are not measured results.</p>
-    <figure>
-      <img src="images/fig1-pipeline.png" alt="Retrieval and verification pipeline mock-up" loading="lazy">
-      <figcaption>Figure 1. Retrieval and verification pipeline: case input, extraction, hybrid retrieval over authenticated texts, AyurParam drafting, citation and entailment checks, Vaidya validation.</figcaption>
-    </figure>
-    <figure>
-      <img src="images/fig2-samprapti.png" alt="Samprapti hypothesis and validation view mock-up" loading="lazy">
-      <figcaption>Figure 2. Samprapti hypothesis and validation view: each component shows its state and source, and the Vaidya decides on each one.</figcaption>
-    </figure>
-    <figure>
-      <img src="images/fig3-journey.png" alt="Longitudinal patient journey mock-up" loading="lazy">
-      <figcaption>Figure 3. Longitudinal patient journey: components tracked across visits with context such as diet, season, stress and sleep.</figcaption>
-    </figure>
-  </section>
-
-  <footer>
-    <p>PRAKAMYA | AYUR PRAGYA | AyushTech Innovate, Phase 1. Decision support for qualified Ayurvedic practitioners; it does not diagnose, prescribe or choose doses.</p>
-  </footer>
-
-</main>
+<p class="note" style="margin:0 0 10px"><a href="PRAKAMYA_AYUR_PRAGYA_Round1_Abstract.pdf">Download abstract (PDF)</a> &middot; <a href="AYUR_PRAGYA_Final_Proposal.pdf">Full proposal (PDF)</a></p>
+<section class="page" id="page1">
+  <div class="topbar"><button class="listen" data-key="p1" aria-label="Listen to page 1"><svg class="arr" viewBox="0 0 60 12" aria-hidden="true"><path d="M0 6 H54" /><path d="M54 6 L46 1 M54 6 L46 11" /></svg><span class="tap">Tap to hear</span><span class="pill"><span class="play">&#9654;</span> Click here to listen: our team explains this</span></button><div class="ctl"><div class="player" data-key="p1" hidden><span class="t cur">0:00</span><div class="bar"><div class="fill"></div></div><span class="t left">-0:00</span><div class="speeds"><button type="button" data-rate="1" class="on">1&times;</button><button type="button" data-rate="1.5">1.5&times;</button><button type="button" data-rate="2">2&times;</button></div></div><p class="note voice" data-key="p1" hidden>Voice note to be added.</p></div></div>
+  <div class="content">
+<h1>AYUR PRAGYA: Explainable Samprapti Support for Ayurvedic Practitioners</h1>
+<p class="team"><b>Team:</b> PRAKAMYA | <b>Problem:</b> Vaidya diagnostic support (AyushTech Innovate, Phase 1)</p>
+<div class="glass highlight"><p><b>Central idea:</b> an explainable, Vaidya-validated, longitudinal Samprapti model in which every inference traces to a patient observation and a verified source. The AI proposes; the Vaidya decides.</p></div>
+<div class="glass"><h2>1. Problem and Domain</h2>
+<p>We address Vaidya diagnostic support, grounded in the Charaka Samhita, Sushruta Samhita and Ashtanga Hridaya (Vagbhata). Ayurvedic diagnosis rests on Samprapti, the individual account of how a disease arises and manifests (Nidana, Dosha, Dushya, Agni, Srotas). The information needed for that reasoning is scattered across notes, Ayurvedic findings and lab reports, while lifestyle and environment are often unrecorded. Samprapti usually lives only in the clinician's head, so it cannot be reviewed or compared.</p>
+</div>
+<div class="glass"><h2>2. Understanding of the Challenge</h2>
+<p>The difficulty is turning fragmented clinical information into a reviewable hypothesis without taking over the practitioner's role. General-purpose language models can invent verses and references. Existing tools answer generic questions or classify once, without modelling disease over time. The system combines a language model, retrieval from authenticated classical texts, deterministic safety rules, and a validation step that keeps AI output separate from the record.</p>
+</div>
+<div class="glass"><h2>3. Proposed Approach and Architecture</h2>
+<p>The system has five components:</p>
+<p class="item">1. <b>Patient Context Engine:</b> source-tagged observations (patient-reported, examined, interpreted or AI-extracted).</p>
+<p class="item">2. <b>Ayurvedic Knowledge Layer:</b> AyurParam, a retrieval index over authenticated classical texts, and a knowledge graph.</p>
+<p class="item">3. <b>Samprapti Modelling Engine:</b> a hypothesis in which each component (Nidana, Dosha, Dushya, Agni, Srotas) has a state (supported, uncertain, unsupported or conflicted) linked to observations and sources.</p>
+<p class="item">4. <b>Safety and Verification Layer:</b> deterministic rules, citation verification, and contradiction and gap detection.</p>
+<p class="item">5. <b>Vaidya Validation Workbench:</b> the practitioner accepts, modifies, rejects or flags each component, with a reason for modify and reject. The result is a versioned, validated record.</p>
+<p>Observations flow through retrieval, AyurParam interpretation, verification and safety checks to Vaidya review. AyurParam, a bilingual Ayurveda model, handles Sanskrit, Hindi and English terms, interprets retrieved passages and drafts candidate mappings. It may cite only retrieved passages, and each citation is checked against the passage it names. The tool gives no diagnosis or prescription; the Vaidya decides. Safety checks are deterministic rules. The stack is open-source: a web interface, a FastAPI backend, a vector and keyword index, a graph database and PostgreSQL.</p>
+</div>
+<div class="glass"><h2>4. Minimum Viable Scope</h2>
+<p>The Phase 2 prototype covers two to three conditions, a vetted corpus, the AyurParam gateway, hypothesis and validation screens, and the safety rules, demonstrated on synthetic Vaidya-authored cases. It includes an open repository under MIT or Apache 2.0, a live hosted link, and a technical-clinical report on retrieval accuracy, citations and safety boundaries. Stretch goals are an editable Samprapti visualiser, LoRA task adapters tested against the base model, a governed preference-learning loop from Vaidya edits used only after expert validation, and regional-language support.</p>
+</div>
+  </div>
+  <div class="foot"><span>PRAKAMYA | AYUR PRAGYA | AyushTech Innovate, Phase 1 Abstract</span><span>Page 1</span></div>
+  <audio id="a-p1" preload="none" src="audio/page-1.mp3"></audio>
+</section>
+<section class="page" id="page2">
+  <div class="topbar"><button class="listen" data-key="p2" aria-label="Listen to page 2"><svg class="arr" viewBox="0 0 60 12" aria-hidden="true"><path d="M0 6 H54" /><path d="M54 6 L46 1 M54 6 L46 11" /></svg><span class="tap">Tap to hear</span><span class="pill"><span class="play">&#9654;</span> Click here to listen: our team explains this</span></button><div class="ctl"><div class="player" data-key="p2" hidden><span class="t cur">0:00</span><div class="bar"><div class="fill"></div></div><span class="t left">-0:00</span><div class="speeds"><button type="button" data-rate="1" class="on">1&times;</button><button type="button" data-rate="1.5">1.5&times;</button><button type="button" data-rate="2">2&times;</button></div></div><p class="note voice" data-key="p2" hidden>Voice note to be added.</p></div></div>
+  <div class="content">
+<div class="glass"><h2>5. Evaluation Plan</h2>
+<p>Retrieval is measured by Recall@5 and nDCG@5 on about 100 expert-written questions, against a keyword-only baseline. Citation accuracy targets above 95% of cited statements verifiably supported, with zero contradictions. Experts rate answers on accuracy and completeness (1 to 5). Adversarial safety cases, such as pregnancy and allergy, target a false-negative rate below 5% for contraindications. We also measure abstention, clinician usability (System Usability Scale) and query latency. These are targets to be measured; this proposal claims no performance results.</p>
+</div>
+<div class="glass"><h2>6. Novelty and Differentiation</h2>
+<p><b>What is borrowed.</b> Retrieval-augmented generation, entailment checks on medical claims, and human review of AI output all have precedent in general medicine. We do not claim them as new.</p>
+<p><b>What is new: the integration, in five points.</b></p>
+<p class="item">1. <b>An editable Samprapti model.</b> The disease pathway is a linked set of five components (Nidana, Dosha, Dushya, Agni, Srotas). Each has a state (supported, uncertain, unsupported or conflicted) and the evidence behind it. The Ayurveda tools we reviewed answer questions or classify a case once; none we found models the pathway and lets the practitioner edit it.</p>
+<p class="item">2. <b>Citations the model cannot invent.</b> Each statement must point to a retrieved passage (edition, chapter, verse) and pass an entailment check. Citations come from retrieval IDs, not from text the model writes, so a reference cannot be made up.</p>
+<p class="item">3. <b>Season and place as labelled context.</b> Ritu (season), place and daily routine are recorded in the patient record and marked as context. They inform the Samprapti hypothesis; they are not treated as a diagnosis.</p>
+<p class="item">4. <b>A validated record separate from the AI hypothesis.</b> AI suggestions and the Vaidya's decisions are stored apart. Each decision is versioned and logged, and the validated record changes only when the Vaidya acts.</p>
+<p class="item">5. <b>A longitudinal view.</b> Components are tracked across visits, so a change in state is visible over time (Figure 3). Most classification tools look at a single visit.</p>
+<p><b>Where the value is hardest to copy.</b> Points 1 to 4 work together, and the rule set and validation data grow with each validated case. The clinician-authored safety rules sit in fixed code outside the model, so the model's output cannot override them. These are candidates for intellectual-property protection, to be assessed before any filing.</p>
+<p><b>What we will not claim.</b> We do not claim to be first, and we do not claim performance results. Section 5 defines how each point will be measured. The novelty of the integration will be checked against the published literature before submission.</p>
+</div>
+<div class="glass"><h2>7. Feasibility and Team</h2>
+<p>Apurva, a PhD scholar in Ayurveda, leads clinical logic: Samprapti design, source selection, safety rules and the validation protocol. Aditya, team leader and B.Tech CSE student, leads architecture, the RAG pipeline, AyurParam integration and submission. Aswin and Preenithi, both B.Tech CSE students, handle corpus ingestion, the knowledge graph, retrieval evaluation, and the interface. Timeline: Phase 1 on 22 November 2026, Phase 2 prototype on 1 December 2026, finale at IIT Bombay on 15 to 18 December 2026. Per-consultation cost will be measured in the pilot. Deployment will be documented for installation and self-hosting.</p>
+</div>
+<div class="glass"><h2>8. Risks and Limitations</h2>
+<p>Source quality matters: OCR errors and unverified translations could mislead, so we use vetted editions and expert checks. AyurParam can still err, and layered checks and abstention are the mitigations. Doctors may distrust AI output, so validation is built into the workflow. Pilot uptake and Sanskrit queries are untested.</p>
+</div>
+  </div>
+  <div class="foot"><span>PRAKAMYA | AYUR PRAGYA | AyushTech Innovate, Phase 1 Abstract</span><span>Page 2</span></div>
+  <audio id="a-p2" preload="none" src="audio/page-2.mp3"></audio>
+</section>
+<section class="page" id="page3">
+  <div class="topbar"><button class="listen" data-key="p3" aria-label="Listen to page 3"><svg class="arr" viewBox="0 0 60 12" aria-hidden="true"><path d="M0 6 H54" /><path d="M54 6 L46 1 M54 6 L46 11" /></svg><span class="tap">Tap to hear</span><span class="pill"><span class="play">&#9654;</span> Click here to listen: our team explains this</span></button><div class="ctl"><div class="player" data-key="p3" hidden><span class="t cur">0:00</span><div class="bar"><div class="fill"></div></div><span class="t left">-0:00</span><div class="speeds"><button type="button" data-rate="1" class="on">1&times;</button><button type="button" data-rate="1.5">1.5&times;</button><button type="button" data-rate="2">2&times;</button></div></div><p class="note voice" data-key="p3" hidden>Voice note to be added.</p></div></div>
+  <div class="content">
+<div class="glass"><h2>9. Responsible Design and Expected Impact</h2>
+<p>The system is an assistive tool for registered practitioners. It does not issue prescriptions or doses, and it refers emergencies urgently. Every clinical statement needs a classical or guideline citation; uncited statements are removed or flagged. Safety rules cover pregnancy, paediatric and geriatric cases, allergies, medicines, Anupana and seasonal restrictions, and red flags. Each alert must be acknowledged before a plan is finalised. Patient data is sensitive: explicit consent, role-based and logged access, encryption, and deletion on request. Expected impact is faster, more consistent documentation, classical references on demand, seasonal preventive guidance, and a structured record for teaching and research. The open core is free; optional paid services (hosted deployment, administration, support) sustain it. Time savings will be measured in the pilot.</p>
+</div>
+  </div>
+  <div class="foot"><span>PRAKAMYA | AYUR PRAGYA | AyushTech Innovate, Phase 1 Abstract</span><span>Page 3</span></div>
+  <audio id="a-p3" preload="none" src="audio/page-3.mp3"></audio>
+</section>
+<section class="page" id="page4">
+  <div class="topbar"><button class="listen" data-key="p4" aria-label="Listen to page 4"><svg class="arr" viewBox="0 0 60 12" aria-hidden="true"><path d="M0 6 H54" /><path d="M54 6 L46 1 M54 6 L46 11" /></svg><span class="tap">Tap to hear</span><span class="pill"><span class="play">&#9654;</span> Click here to listen: our team explains this</span></button><div class="ctl"><div class="player" data-key="p4" hidden><span class="t cur">0:00</span><div class="bar"><div class="fill"></div></div><span class="t left">-0:00</span><div class="speeds"><button type="button" data-rate="1" class="on">1&times;</button><button type="button" data-rate="1.5">1.5&times;</button><button type="button" data-rate="2">2&times;</button></div></div><p class="note voice" data-key="p4" hidden>Voice note to be added.</p></div></div>
+  <div class="content">
+<div class="glass"><h2>Supporting Details</h2>
+<p><b>Classical grounding.</b> Sources are authenticated editions of the Charaka Samhita, Sushruta Samhita and Ashtanga Hridaya, each registered with its edition, translator and permission status. Retrieval works at passage level, with chapter, verse and edition metadata.</p>
+<p><b>Citation precision.</b> The model may cite only chunks it actually retrieved. A verifier confirms that quoted words appear in the cited chunk and that paraphrases are supported by it. Citations come from retrieval IDs, so the model cannot type a reference. Passage precision is measured on a gold set of expert-written questions.</p>
+<p><b>Latency.</b> The target is under 5 seconds per query, measured end to end on stated CPU and GPU hardware, with caching for frequent queries.</p>
+<p><b>Clinical disclaimer.</b> AYUR PRAGYA is decision support for qualified Ayurvedic practitioners. It does not diagnose, prescribe, choose doses or replace clinical judgement. Emergencies are excluded and referred for urgent care.</p>
+<p><b>Languages.</b> English and Hindi first; Sanskrit terms shown with transliteration, with the original source language always kept. Regional Indian languages follow the prototype, and translation never overwrites a citation.</p>
+<p><b>Preventive and public-health use.</b> Season- and routine-aware prompts (Ritucharya and Dinacharya) are drawn from retrieved sources and reviewed by the Vaidya before anything reaches a patient.</p>
+<p><b>Business model.</b> The open-source core is released under MIT or Apache 2.0, subject to licence checks of the model and data. Optional paid services are hosted deployment, institution administration, curated corpus management, integration and support. A clinic can start with one practitioner and expand to a multi-practitioner workflow.</p>
+<p><b>Open-source deployment.</b> The repository will include an installation guide, containerised services and a documented deployment path, so institutions can self-host, including on-premise where data must stay local.</p>
+</div>
+<div class="glass"><h2>Risk Mitigation in Detail</h2>
+<p><b>Architecture by design.</b> Every answer follows one path: retrieve passages, draft from those passages only, verify each citation, apply safety rules, then send to the Vaidya. The model cannot invent a citation, because citations come from retrieval IDs. Safety rules are fixed code rather than model output, so they still apply when the model is wrong. If the safety engine or the handoff fails, the system shows no recommendation (fail closed).</p>
+<p><b>Doctor trust.</b> Every statement shows its source: edition, chapter and verse. The Vaidya must decide on each component (accept, modify, reject or flag), with a reason for modify and reject. AI output and the validated record are stored separately, with an audit log. Vaidyas write and review the synthetic test cases and sample answers. When sources are weak or conflicting, the system abstains and says so rather than guessing.</p>
+<p><b>Scalability.</b> The stack is open-source and containerised, so an institution can self-host, including on-premise where patient data must stay local. A clinic can start with one practitioner and expand to a multi-practitioner workflow. New authenticated editions can be added to the index and knowledge graph without changing the workflow. Optional paid services cover hosting, administration, corpus management and support.</p>
+<p><b>Realistic scenario.</b> A Vaidya sees a 34-year-old with two months of bloating and heaviness, irregular late meals, sedentary work, and a visit during monsoon season. The intake records these with their sources. The system retrieves passages on Agni and Srotas, drafts a hypothesis, and marks which components have evidence and which are uncertain. The safety layer flags any contraindication before a plan is considered. The Vaidya keeps, changes or rejects each item, and a versioned record is saved. At the next visit the system shows what changed, so the doctor reviews the change rather than starting again.</p>
+<p><b>Bad text sources.</b> Only registered editions are used, and each records its edition, translator and permission status. Scanned text is checked for OCR errors before it is indexed, and unverified translations are not used for citation. Sanskrit is shown beside any translation, and translation never overwrites a citation. Experts check a sample of retrieved passages against the original text.</p>
+<p><b>AI errors.</b> The model drafts only from retrieved passages. An entailment check tests each generated statement against its cited passage, and any statement without support is removed or flagged. When sources conflict, both sides are shown. Citation accuracy and missed contraindications are measured against the targets in section 5, and failures are logged and fixed before each release.</p>
+</div><p class="note">Full proposal, sources and rulebook checklist: AYUR_PRAGYA_Final_Proposal.pdf</p>
+  </div>
+  <div class="foot"><span>PRAKAMYA | AYUR PRAGYA | AyushTech Innovate, Phase 1 Abstract</span><span>Page 4</span></div>
+  <audio id="a-p4" preload="none" src="audio/page-4.mp3"></audio>
+</section>
+<section class="page" id="page5">
+  <div class="topbar"><button class="listen" data-key="p5" aria-label="Listen to page 5"><svg class="arr" viewBox="0 0 60 12" aria-hidden="true"><path d="M0 6 H54" /><path d="M54 6 L46 1 M54 6 L46 11" /></svg><span class="tap">Tap to hear</span><span class="pill"><span class="play">&#9654;</span> Click here to listen: our team explains this</span></button><div class="ctl"><div class="player" data-key="p5" hidden><span class="t cur">0:00</span><div class="bar"><div class="fill"></div></div><span class="t left">-0:00</span><div class="speeds"><button type="button" data-rate="1" class="on">1&times;</button><button type="button" data-rate="1.5">1.5&times;</button><button type="button" data-rate="2">2&times;</button></div></div><p class="note voice" data-key="p5" hidden>Voice note to be added.</p></div></div>
+  <div class="content">
+<h2 class="fig-title">Prototype Screens (Design Mock-ups)</h2><p class="note">Design mock-ups of the planned prototype. Patients are synthetic, scores and trends are illustrative, and no image is a measured result.</p><div class="glass fig"><img src="images/fig1-pipeline.png" alt="Prototype Screens (Design Mock-ups)"><p class="cap">Figure 1. Retrieval and verification pipeline (design mock-up).</p></div><div class="glass"><p class="item">&lt;b&gt;1. Case input.&lt;/b&gt; The Vaidya enters complaints, onset, diet, lifestyle and season and place.</p><p class="item">&lt;b&gt;2. Extraction.&lt;/b&gt; Symptoms and context are parsed and mapped to Ayurvedic terms (Agnimandya, Ama, Vata, Pitta, Annavaha Srotas).</p><p class="item">&lt;b&gt;3. Retrieval.&lt;/b&gt; Hybrid search (meaning and keyword) returns the top passages from the authenticated classical corpus and the knowledge graph.</p><p class="item">&lt;b&gt;4. Reasoning.&lt;/b&gt; AyurParam drafts the Samprapti hypothesis from the retrieved passages only.</p><p class="item">&lt;b&gt;5. Verification.&lt;/b&gt; Each citation is checked for source authenticity, entailment, contradiction and context consistency before it is shown.</p><p class="item">&lt;b&gt;6. Validation.&lt;/b&gt; The Vaidya accepts, modifies or rejects each item. Every statement links back to its source.</p></div>
+  </div>
+  <div class="foot"><span>PRAKAMYA | AYUR PRAGYA | AyushTech Innovate, Phase 1 Abstract</span><span>Page 5</span></div>
+  <audio id="a-p5" preload="none" src="audio/page-5.mp3"></audio>
+</section>
+<section class="page" id="page6">
+  <div class="topbar"><button class="listen" data-key="p6" aria-label="Listen to page 6"><svg class="arr" viewBox="0 0 60 12" aria-hidden="true"><path d="M0 6 H54" /><path d="M54 6 L46 1 M54 6 L46 11" /></svg><span class="tap">Tap to hear</span><span class="pill"><span class="play">&#9654;</span> Click here to listen: our team explains this</span></button><div class="ctl"><div class="player" data-key="p6" hidden><span class="t cur">0:00</span><div class="bar"><div class="fill"></div></div><span class="t left">-0:00</span><div class="speeds"><button type="button" data-rate="1" class="on">1&times;</button><button type="button" data-rate="1.5">1.5&times;</button><button type="button" data-rate="2">2&times;</button></div></div><p class="note voice" data-key="p6" hidden>Voice note to be added.</p></div></div>
+  <div class="content">
+<h2 class="fig-title">Figure 2. Samprapti hypothesis and validation view</h2><p class="note">Design mock-up. Same scenario, shown as the Samprapti hypothesis the Vaidya reviews. Synthetic patient for illustration only.</p><div class="glass fig"><img src="images/fig2-samprapti.png" alt="Figure 2. Samprapti hypothesis and validation view"><p class="cap">Figure 2. Samprapti hypothesis and validation view (design mock-up).</p></div><div class="glass"><p class="item">&lt;b&gt;Nidana:&lt;/b&gt; irregular diet, late meals, prolonged sitting. &lt;b&gt;Dosha:&lt;/b&gt; Vata up, Pitta up.</p><p class="item">&lt;b&gt;Dushya:&lt;/b&gt; Rasa, the first dhatu (tissue), is the primary dushya and is marked uncertain. Food (Anna) is not a dushya; it is considered under Agni and Ahara. &lt;b&gt;Agni:&lt;/b&gt; low digestive strength (Agnimandya).</p><p class="item">&lt;b&gt;Srotas:&lt;/b&gt; Annavaha channel with functional obstruction. Each state carries a badge and a link to its source.</p><p class="item">&lt;b&gt;Vaidya workbench:&lt;/b&gt; every component needs a decision (accept, modify, reject or flag). A note records the follow-up plan.</p></div>
+  </div>
+  <div class="foot"><span>PRAKAMYA | AYUR PRAGYA | AyushTech Innovate, Phase 1 Abstract</span><span>Page 6</span></div>
+  <audio id="a-p6" preload="none" src="audio/page-6.mp3"></audio>
+</section>
+<section class="page" id="page7">
+  <div class="topbar"><button class="listen" data-key="p7" aria-label="Listen to page 7"><svg class="arr" viewBox="0 0 60 12" aria-hidden="true"><path d="M0 6 H54" /><path d="M54 6 L46 1 M54 6 L46 11" /></svg><span class="tap">Tap to hear</span><span class="pill"><span class="play">&#9654;</span> Click here to listen: our team explains this</span></button><div class="ctl"><div class="player" data-key="p7" hidden><span class="t cur">0:00</span><div class="bar"><div class="fill"></div></div><span class="t left">-0:00</span><div class="speeds"><button type="button" data-rate="1" class="on">1&times;</button><button type="button" data-rate="1.5">1.5&times;</button><button type="button" data-rate="2">2&times;</button></div></div><p class="note voice" data-key="p7" hidden>Voice note to be added.</p></div></div>
+  <div class="content">
+<h2 class="fig-title">Figure 3. Longitudinal patient journey</h2><p class="note">Design mock-up. The same patient over three visits. Synthetic patient; trend values are illustrative.</p><div class="glass fig"><img src="images/fig3-journey.png" alt="Figure 3. Longitudinal patient journey"><p class="cap">Figure 3. Longitudinal patient journey (design mock-up).</p></div><div class="glass"><p class="item">&lt;b&gt;Visit 1 (two months ago):&lt;/b&gt; bloating, heaviness, irregular appetite.</p><p class="item">&lt;b&gt;Visit 2 (one month ago):&lt;/b&gt; bloating and heaviness increase, and amlapitta appears.</p><p class="item">&lt;b&gt;Current visit:&lt;/b&gt; persistent bloating and irregular appetite, after a lifestyle change.</p><p class="item">&lt;b&gt;Context shown:&lt;/b&gt; diet change, high work stress, heavy rainfall, 5 to 6 hours of sleep. Trend lines track bloating, heaviness and appetite.</p><p class="item">&lt;b&gt;Samprapti evolution:&lt;/b&gt; each component is tracked across visits, so a change in state is visible rather than overwritten.</p></div>
+  </div>
+  <div class="foot"><span>PRAKAMYA | AYUR PRAGYA | AyushTech Innovate, Phase 1 Abstract</span><span>Page 7</span></div>
+  <audio id="a-p7" preload="none" src="audio/page-7.mp3"></audio>
+</section>
+<section class="page" id="page8">
+  <div class="topbar"><button class="listen" data-key="p8" aria-label="Listen to page 8"><svg class="arr" viewBox="0 0 60 12" aria-hidden="true"><path d="M0 6 H54" /><path d="M54 6 L46 1 M54 6 L46 11" /></svg><span class="tap">Tap to hear</span><span class="pill"><span class="play">&#9654;</span> Click here to listen: our team explains this</span></button><div class="ctl"><div class="player" data-key="p8" hidden><span class="t cur">0:00</span><div class="bar"><div class="fill"></div></div><span class="t left">-0:00</span><div class="speeds"><button type="button" data-rate="1" class="on">1&times;</button><button type="button" data-rate="1.5">1.5&times;</button><button type="button" data-rate="2">2&times;</button></div></div><p class="note voice" data-key="p8" hidden>Voice note to be added.</p></div></div>
+  <div class="content">
+<div class="glass refs"><h2>References</h2><p class="ref">1. Bhishagratna, K. L. (ed. and tr.), The Sushruta Samhita, Vol. II (Nidana, Sarira, Chikitsita and Kalpa Sthana), Calcutta, 1911. Public copy on archive.org, marked not in copyright. Source of the Vata-Rakta passage.</p><p class="ref">2. BharatGen, AyurParam model card, Hugging Face: huggingface.co/bharatgenai/AyurParam.</p></div>
+  </div>
+  <div class="foot"><span>PRAKAMYA | AYUR PRAGYA | AyushTech Innovate, Phase 1 Abstract</span><span>Page 8</span></div>
+  <audio id="a-p8" preload="none" src="audio/page-8.mp3"></audio>
+</section>
 
 <script>
 (function () {
-  var TEAM = [
-    { name: "Aditya", role: "Team leader, B.Tech CSE", file: "audio/aditya.mp3",
-      text: "Architecture, RAG pipeline, AyurParam integration, and submission." },
-    { name: "Apurva", role: "PhD scholar in Ayurveda", file: "audio/apurva.mp3",
-      text: "Clinical logic: Samprapti design, source selection, safety rules, and validation protocol." },
-    { name: "Aswin", role: "B.Tech CSE", file: "audio/aswin.mp3",
-      text: "Corpus ingestion, knowledge graph, retrieval evaluation, and open-source deployment." },
-    { name: "Preenithi", role: "B.Tech CSE", file: "audio/preenithi.mp3",
-      text: "Interface and usability: intake, Samprapti view, source panel, and validation screen." }
-  ];
-  var SPEEDS = [1, 1.5, 2];
-
-  function el(tag, cls, text) {
-    var e = document.createElement(tag);
-    if (cls) e.className = cls;
-    if (text) e.textContent = text;
-    return e;
-  }
-
-  function buildCard(m) {
-    var card = el("article", "card");
-    card.appendChild(el("h3", "", m.name));
-    card.appendChild(el("p", "note", m.role));
-    card.appendChild(el("p", "", m.text));
-
-    var audio = new Audio();
-    audio.preload = "none";
-    var status = el("p", "note", "");
-    var player = el("div", "player");
-    var row = el("div", "row");
-    var play = el("button", "btn", "Listen");
-    var pause = el("button", "btn", "Pause");
-    var bar = el("div", "bar");
-    var fill = el("span", "", "");
-    bar.appendChild(fill);
-    row.appendChild(play);
-    row.appendChild(pause);
-    SPEEDS.forEach(function (s) {
-      var b = el("button", "btn", s + "x");
-      b.addEventListener("click", function () { try { audio.playbackRate = s; } catch (e) {} });
-      row.appendChild(b);
-    });
-    player.appendChild(row);
-    player.appendChild(bar);
-    player.appendChild(status);
-
-    var available = true;
-    audio.addEventListener("error", function () {
-      available = false;
-      play.disabled = true; pause.disabled = true;
-      status.textContent = "Voice note to be added.";
-    });
+  function fmt(s) { if (!isFinite(s)) return "0:00"; var m = Math.floor(s / 60), r = Math.floor(s % 60); return m + ":" + (r < 10 ? "0" : "") + r; }
+  document.querySelectorAll(".page").forEach(function (page) {
+    var key = page.querySelector(".listen").getAttribute("data-key");
+    var audio = page.querySelector("audio");
+    var listen = page.querySelector(".listen");
+    var player = page.querySelector(".player[data-key='" + key + "']");
+    var voice = page.querySelector(".voice[data-key='" + key + "']");
+    var fill = player.querySelector(".fill"), cur = player.querySelector(".cur"), left = player.querySelector(".left");
+    var ok = false;
+    audio.addEventListener("error", function () { ok = false; });
+    audio.addEventListener("loadedmetadata", function () { ok = true; });
     audio.addEventListener("timeupdate", function () {
-      if (audio.duration) fill.style.width = (100 * audio.currentTime / audio.duration) + "%";
+      if (!audio.duration) return;
+      fill.style.width = (100 * audio.currentTime / audio.duration) + "%";
+      cur.textContent = fmt(audio.currentTime); left.textContent = "-" + fmt(audio.duration - audio.currentTime);
     });
-    audio.addEventListener("ended", function () { play.textContent = "Listen"; });
-
-    play.addEventListener("click", function () {
-      if (!available) return;
+    audio.addEventListener("ended", function () { listen.classList.remove("playing"); });
+    listen.addEventListener("click", function () {
       try {
-        if (!audio.src) audio.src = m.file;
-        if (audio.paused) {
-          var p = audio.play();
-          if (p && p.catch) p.catch(function () { status.textContent = "Could not play this file."; });
-          play.textContent = "Resume";
-        }
-      } catch (e) { status.textContent = "Audio is not available here."; }
+        if (!audio.getAttribute("src")) return;
+        player.hidden = false;
+        var p = audio.play();
+        if (p && p.catch) p.catch(function () { player.hidden = true; voice.hidden = false; });
+        listen.classList.toggle("playing", !audio.paused);
+      } catch (e) { voice.hidden = false; }
     });
-    pause.addEventListener("click", function () {
-      try { audio.pause(); play.textContent = "Resume"; } catch (e) {}
+    player.querySelectorAll(".speeds button").forEach(function (b) {
+      b.addEventListener("click", function () {
+        try { audio.playbackRate = parseFloat(b.getAttribute("data-rate")); } catch (e) {}
+        player.querySelectorAll(".speeds button").forEach(function (x) { x.classList.toggle("on", x === b); });
+      });
     });
-
-    card.appendChild(player);
-    return card;
-  }
-
-  var holder = document.getElementById("team");
-  TEAM.forEach(function (m) { holder.appendChild(buildCard(m)); });
+    player.querySelector(".bar").addEventListener("click", function (ev) {
+      try { if (audio.duration) { var r = ev.currentTarget.getBoundingClientRect(); audio.currentTime = audio.duration * (ev.clientX - r.left) / r.width; } } catch (e) {}
+    });
+  });
 })();
 </script>
-</body>
-</html>
+</body></html>
