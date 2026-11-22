@@ -72,6 +72,7 @@ p { margin:0 0 6px; }
   <div class="content">
 <h1>AYUR PRAGYA: Explainable Samprapti Support for Ayurvedic Practitioners</h1>
 <p class="team"><b>Team:</b> PRAKAMYA | <b>Problem:</b> Vaidya diagnostic support (AyushTech Innovate, Phase 1)</p>
+<p><b>Listen:</b> click the link to hear the team explain each page, with embedded audio: https://adityakalagatoori.github.io/PRAKAMYA_AYUR_PRAGYA/</p>
 <div class="glass highlight"><p><b>Central idea:</b> an explainable, Vaidya-validated, longitudinal Samprapti model in which every inference traces to a patient observation and a verified source. The AI proposes; the Vaidya decides.</p></div>
 <div class="glass"><h2>1. Problem and Domain</h2>
 <p>We address Vaidya diagnostic support, grounded in the Charaka Samhita, Sushruta Samhita and Ashtanga Hridaya (Vagbhata). Ayurvedic diagnosis rests on Samprapti, the individual account of how a disease arises and manifests (Nidana, Dosha, Dushya, Agni, Srotas). The information needed for that reasoning is scattered across notes, Ayurvedic findings and lab reports, while lifestyle and environment are often unrecorded. Samprapti usually lives only in the clinician's head, so it cannot be reviewed or compared.</p>
@@ -215,14 +216,28 @@ p { margin:0 0 6px; }
       cur.textContent = fmt(audio.currentTime); left.textContent = "-" + fmt(audio.duration - audio.currentTime);
     });
     audio.addEventListener("ended", function () { listen.classList.remove("playing"); });
+    var pill = listen.querySelector(".pill");
+    var idleLabel = pill ? pill.lastChild.textContent : "";
+    function setLabel(txt) { if (pill) pill.lastChild.textContent = " " + txt; }
     listen.addEventListener("click", function () {
       try {
         if (!audio.getAttribute("src")) return;
+        if (!audio.paused) {
+          audio.pause();
+          listen.classList.remove("playing");
+          setLabel("Resume");
+          return;
+        }
         player.hidden = false;
         var p = audio.play();
         if (p && p.catch) p.catch(function () { player.hidden = true; voice.hidden = false; });
-        listen.classList.toggle("playing", !audio.paused);
+        listen.classList.add("playing");
+        setLabel("Pause");
       } catch (e) { voice.hidden = false; }
+    });
+    audio.addEventListener("ended", function () {
+      listen.classList.remove("playing");
+      setLabel("Listen again");
     });
     player.querySelectorAll(".speeds button").forEach(function (b) {
       b.addEventListener("click", function () {
