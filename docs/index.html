@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<title>AYUR PRAGYA | PRAKAMYA</title>
+<meta name="description" content="AYUR PRAGYA: explainable, Vaidya-validated Samprapti support. AyushTech Innovate Phase 1 submission from team PRAKAMYA.">
+<style>
+  :root {
+    --bg: #F7F4FD; --card: #FFFFFF; --fg: #21163A; --muted: #6B5B8C;
+    --accent: #5B21B6; --accent-2: #8B5CF6; --line: #E4DDF5; --ok: #15803D;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #140E24; --card: #1E1733; --fg: #F1ECFF; --muted: #B7A9D6;
+      --accent: #C4B5FD; --accent-2: #A78BFA; --line: #342A52; --ok: #4ADE80; color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #140E24; --card: #1E1733; --fg: #F1ECFF; --muted: #B7A9D6;
+    --accent: #C4B5FD; --accent-2: #A78BFA; --line: #342A52; --ok: #4ADE80; color-scheme: dark;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--fg);
+    font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+    padding-left: max(16px, env(safe-area-inset-left, 0px));
+    padding-right: max(16px, env(safe-area-inset-right, 0px));
+  }
+  main { max-width: 960px; margin: 0 auto; padding-block: 28px 56px; }
+  h1, h2, h3 { line-height: 1.25; text-wrap: balance; }
+  h1 { font-size: clamp(1.7rem, 4.5vw, 2.4rem); margin: 0 0 8px; color: var(--accent); }
+  h2 { font-size: 1.35rem; margin: 40px 0 12px; color: var(--accent); }
+  h3 { font-size: 1.05rem; margin: 0 0 6px; }
+  p { margin: 0 0 12px; }
+  .lede { color: var(--muted); font-size: 1.02rem; max-width: 62ch; }
+  .band {
+    background: linear-gradient(120deg, #4C1D95, #8B5CF6); color: #fff;
+    border-radius: 16px; padding: 22px 20px; margin-bottom: 8px;
+  }
+  .band p { color: #EDE9FE; margin: 0; }
+  .grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+  .card {
+    background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 16px;
+    min-width: 0;
+  }
+  .tag { display: inline-block; font-size: .75rem; letter-spacing: .04em; text-transform: uppercase;
+    color: var(--accent); border: 1px solid var(--line); border-radius: 999px; padding: 2px 9px; margin-bottom: 8px; }
+  a { color: var(--accent); }
+  .btn {
+    appearance: none; border: 1px solid var(--accent); background: transparent; color: var(--accent);
+    border-radius: 10px; padding: 8px 14px; font: inherit; cursor: pointer; min-height: 40px;
+  }
+  .btn:hover { background: var(--accent); color: #fff; }
+  .btn[disabled] { opacity: .55; cursor: default; }
+  .btn[disabled]:hover { background: transparent; color: var(--accent); }
+  .player { margin-top: 10px; }
+  .player .bar { height: 6px; background: var(--line); border-radius: 999px; overflow: hidden; margin: 8px 0; }
+  .player .bar > span { display: block; height: 100%; width: 0; background: var(--accent-2); }
+  .row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+  .note { color: var(--muted); font-size: .9rem; }
+  figure { margin: 0 0 28px; }
+  figure img { width: 100%; height: auto; border-radius: 12px; border: 1px solid var(--line); background: #fff; }
+  figcaption { color: var(--muted); font-size: .92rem; margin-top: 8px; }
+  .pdf-links { display: flex; flex-wrap: wrap; gap: 10px; }
+  .pdf-links a { text-decoration: none; border: 1px solid var(--accent); border-radius: 10px; padding: 10px 14px; }
+  footer { margin-top: 48px; color: var(--muted); font-size: .88rem; }
+</style>
+</head>
+<body>
+<main>
+
+  <header>
+    <p class="tag">AyushTech Innovate | Techfest 2026-27 | Phase 1</p>
+    <h1>AYUR PRAGYA</h1>
+    <p class="lede">Explainable Samprapti support for Ayurvedic practitioners. Every inference traces to a patient observation and a verified classical source. The AI proposes; the Vaidya decides.</p>
+    <p class="note">Team PRAKAMYA</p>
+  </header>
+
+  <section>
+    <h2>Documents</h2>
+    <div class="pdf-links">
+      <a href="PRAKAMYA_AYUR_PRAGYA_Round1_Abstract.pdf">Phase 1 abstract (PDF)</a>
+      <a href="AYUR_PRAGYA_Final_Proposal.pdf">Full proposal (PDF)</a>
+    </div>
+  </section>
+
+  <section>
+    <h2>Team explanations</h2>
+    <p class="note">Each member explains their part. Press play to listen.</p>
+    <div class="grid" id="team"></div>
+  </section>
+
+  <section>
+    <h2>Prototype screens (design mock-ups)</h2>
+    <p class="note">Design mock-ups of the planned prototype. Patients are synthetic and scores are illustrative. They are not measured results.</p>
+    <figure>
+      <img src="images/fig1-pipeline.png" alt="Retrieval and verification pipeline mock-up" loading="lazy">
+      <figcaption>Figure 1. Retrieval and verification pipeline: case input, extraction, hybrid retrieval over authenticated texts, AyurParam drafting, citation and entailment checks, Vaidya validation.</figcaption>
+    </figure>
+    <figure>
+      <img src="images/fig2-samprapti.png" alt="Samprapti hypothesis and validation view mock-up" loading="lazy">
+      <figcaption>Figure 2. Samprapti hypothesis and validation view: each component shows its state and source, and the Vaidya decides on each one.</figcaption>
+    </figure>
+    <figure>
+      <img src="images/fig3-journey.png" alt="Longitudinal patient journey mock-up" loading="lazy">
+      <figcaption>Figure 3. Longitudinal patient journey: components tracked across visits with context such as diet, season, stress and sleep.</figcaption>
+    </figure>
+  </section>
+
+  <footer>
+    <p>PRAKAMYA | AYUR PRAGYA | AyushTech Innovate, Phase 1. Decision support for qualified Ayurvedic practitioners; it does not diagnose, prescribe or choose doses.</p>
+  </footer>
+
+</main>
+
+<script>
+(function () {
+  var TEAM = [
+    { name: "Aditya", role: "Team leader, B.Tech CSE", file: "audio/aditya.mp3",
+      text: "Architecture, RAG pipeline, AyurParam integration, and submission." },
+    { name: "Apurva", role: "PhD scholar in Ayurveda", file: "audio/apurva.mp3",
+      text: "Clinical logic: Samprapti design, source selection, safety rules, and validation protocol." },
+    { name: "Aswin", role: "B.Tech CSE", file: "audio/aswin.mp3",
+      text: "Corpus ingestion, knowledge graph, retrieval evaluation, and open-source deployment." },
+    { name: "Preenithi", role: "B.Tech CSE", file: "audio/preenithi.mp3",
+      text: "Interface and usability: intake, Samprapti view, source panel, and validation screen." }
+  ];
+  var SPEEDS = [1, 1.5, 2];
+
+  function el(tag, cls, text) {
+    var e = document.createElement(tag);
+    if (cls) e.className = cls;
+    if (text) e.textContent = text;
+    return e;
+  }
+
+  function buildCard(m) {
+    var card = el("article", "card");
+    card.appendChild(el("h3", "", m.name));
+    card.appendChild(el("p", "note", m.role));
+    card.appendChild(el("p", "", m.text));
+
+    var audio = new Audio();
+    audio.preload = "none";
+    var status = el("p", "note", "");
+    var player = el("div", "player");
+    var row = el("div", "row");
+    var play = el("button", "btn", "Listen");
+    var pause = el("button", "btn", "Pause");
+    var bar = el("div", "bar");
+    var fill = el("span", "", "");
+    bar.appendChild(fill);
+    row.appendChild(play);
+    row.appendChild(pause);
+    SPEEDS.forEach(function (s) {
+      var b = el("button", "btn", s + "x");
+      b.addEventListener("click", function () { try { audio.playbackRate = s; } catch (e) {} });
+      row.appendChild(b);
+    });
+    player.appendChild(row);
+    player.appendChild(bar);
+    player.appendChild(status);
+
+    var available = true;
+    audio.addEventListener("error", function () {
+      available = false;
+      play.disabled = true; pause.disabled = true;
+      status.textContent = "Voice note to be added.";
+    });
+    audio.addEventListener("timeupdate", function () {
+      if (audio.duration) fill.style.width = (100 * audio.currentTime / audio.duration) + "%";
+    });
+    audio.addEventListener("ended", function () { play.textContent = "Listen"; });
+
+    play.addEventListener("click", function () {
+      if (!available) return;
+      try {
+        if (!audio.src) audio.src = m.file;
+        if (audio.paused) {
+          var p = audio.play();
+          if (p && p.catch) p.catch(function () { status.textContent = "Could not play this file."; });
+          play.textContent = "Resume";
+        }
+      } catch (e) { status.textContent = "Audio is not available here."; }
+    });
+    pause.addEventListener("click", function () {
+      try { audio.pause(); play.textContent = "Resume"; } catch (e) {}
+    });
+
+    card.appendChild(player);
+    return card;
+  }
+
+  var holder = document.getElementById("team");
+  TEAM.forEach(function (m) { holder.appendChild(buildCard(m)); });
+})();
+</script>
+</body>
+</html>
